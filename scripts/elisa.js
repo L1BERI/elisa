@@ -249,6 +249,12 @@ function messageChecker_6(query) {
   }
 }
 
+function sayBye(){
+  byeRndMessage = byeWords[Math.floor(Math.random() * byeWords.length)];
+  $('.messages-box').append(
+    '<div class="elisa-message"><div class="elisa-image"><img src="content/elisa.png" alt=""><p class="elisa-name">Элиза</p></div><div class="elisa-text">' + byeRndMessage + '</div></div>');
+}
+
 function messageChecker_7(query) {
   for (let i = 0; i < keyWords_7.length; i++) {
     keyVariable = query.includes(keyWords_7[i])
@@ -303,7 +309,6 @@ function isGood(query){
 
 function isBad(query) {
   badRndMessage = answersForBad[Math.floor(Math.random() * answersForBad.length)];
-  console.log('Я выполняюсь')
   for (let i = 0; i < keyWordsBad.length; i++) {
     keyVariable = query.includes(keyWordsBad[i])
     if (keyVariable) {
