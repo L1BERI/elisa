@@ -319,4 +319,7 @@ color:rgb(238, 255, 0);
   .chat{
     width: 90vw;
   }
+  .heading{
+    margin-left: 100px;
+  }
 }
