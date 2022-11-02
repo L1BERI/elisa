@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Лаб. работа Элиза</title>
+</head>
+<body>
+  
+  <div class="wrapper">
+      <div class="theme-switcher">
+        <input class="switcher" type="checkbox" checked  name="switch" name="theme">
+        <label for="theme" class="switch dark"></label>
+       
+      </div>
+      <a href="#help" class="button" style="margin: 30px;">Помощь</a>
+      <div class="container">
+        <div class="container-inner">
+          <p class="heading">Естественная система - Элиза</p>
+          <div class="container-action">
+            <div class="chat">
+              <div class="messages-box">
+                <div class="elisa-message">
+                  <div class="elisa-image">
+                    <img src="content/elisa.png" alt="">
+                    <p class="elisa-name">Элиза</p>
+                  </div>
+                  <p class="elisa-text hello-message"></p>
+                </div>
+              
+              </div>
+              <div class="underline"></div>
+              <form class="action">
+                <label for="message" class="message-info">Чтобы начать разговор с Элизой, введите сообщение ниже:</label>
+                <div class="sending">
+                  <textarea class="message-area" name="message" id="" cols="30" rows="10" placeholder="Ваше сообщение..."></textarea>
+                  <button type="submit" class="send button">Отправить</button>
+                </div>
+                
+              </form>
+            </div>
+            <div class="btn-box">
+              <a href="#" class="weather button">Узнать погоду</a>
+              <a href="#" class="game button">Сыграть в камень, бумага или ножницы</a>
+              <a href="#" class="random button">Выбрать случайное число</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="help" class="helper">
+        <p class="helper-text">
+          Как со мной общаться?
+        </p>
+        <ul class="helper-answer">
+          <li>Я могу отреагировать на ваше состояние</li>
+          <li>Я могу ответить на вопрос как у меня дела</li>
+          <li>Я могу найти вам что-то в интернете - найди мне...</li>
+          <li>Я могу просто открыть вам гугл - гугл и т.д</li>
+          <li>Можем сыграть в Камень-ножницы-бумага</li>
+          <li>Также могу вам сгенерировать случайное число из </br>вашего диапозона</li>
+          <li>Могу ответить какая погода в выбранном городе</li>
+          <li>Могу сменить тему - смени тему</li>
+          <li>Все вопросы <a href="https://vk.com/l1beri" style="color: blue; ">сюда</a></li>
+        </ul>
+      </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="scripts/elisa.js"></script>
+<script src="scripts/main.js"></script>
+</html>
