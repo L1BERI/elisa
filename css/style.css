@@ -313,3 +313,10 @@ color:rgb(238, 255, 0);
 .helper-answer {
  display: none;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .chat{
+    width: 90vw;
+  }
+}

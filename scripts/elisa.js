@@ -174,7 +174,7 @@ function messageChecker(query) {
     if (keyVariable) {
       elisaAnswer()
       break;
-    } else if (lowerQuery.includes('погода')) {
+    } else if (lowerQuery.includes('погод')) {
       city = prompt('Введите город:')
       return getWeather(city);
     }
